@@ -59,7 +59,7 @@ def answer_tax_question(user_id: str, question: str) -> str:
     prompt = f"{QUERY_INSTRUCTION}\n\nUser question:\n{question}"
 
     response = client.models.generate_content(
-        model="gemini-2.5-pro",
+        model="gemini-2.0-flash",
         contents=prompt,
         config=config,
     )
